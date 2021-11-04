@@ -1,0 +1,12 @@
+syntax = "proto3";
+package lubtd.earth.earth;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/lubtd/earth/x/earth/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

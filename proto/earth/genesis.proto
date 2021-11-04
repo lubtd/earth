@@ -1,0 +1,14 @@
+syntax = "proto3";
+package lubtd.earth.earth;
+
+import "gogoproto/gogo.proto";
+import "earth/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "github.com/lubtd/earth/x/earth/types";
+
+// GenesisState defines the earth module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
